@@ -4,10 +4,74 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="assets/favicon32x32.ico" sizes="32x32">
   <title>Mem-slider</title>
 </head>
 <body>
+  <div class="wrapper">
+    <div class="slider">
+      <input class="slider__radio" type="radio" name="radio" id="slide-1" checked="checked">
+      <input class="slider__radio" type="radio" name="radio" id="slide-2">
+      <input class="slider__radio" type="radio" name="radio" id="slide-3">
+      <input class="slider__radio" type="radio" name="radio" id="slide-4">
+      <input class="slider__radio" type="radio" name="radio" id="slide-5">
+      <label for="slide-1" class="slider__label-1 label">
+        <span class="slider_pagination pagination"></span>
+      </label>
+      <label for="slide-2" class="slider__label-2 label">
+        <span class="slider_pagination pagination"></span>
+      </label>
+      <label for="slide-3" class="slider__label-3 label">
+        <span class="slider_pagination pagination"></span>
+      </label>
+      <label for="slide-4" class="slider__label-4 label">
+        <span class="slider_pagination pagination"></span>
+      </label>
+      <label for="slide-5" class="slider__label-5 label">
+        <span class="slider_pagination pagination"></span>
+      </label>
+      <div class="slider__slides">
+        <div class="slider__slide-1">
+          <img src="assets/image-1.jpg" alt="Mem-1">
+        </div>
+        <div class="slider__slide-2">
+          <img src="assets/image-2.jpg" alt="Mem-2">
+        </div>
+        <div class="slider__slide-3">
+          <img src="assets/image-3.jpg" alt="Mem-3">
+        </div>
+        <div class="slider__slide-4">
+          <img src="assets/image-4.jpg" alt="Mem-4">
+        </div>
+        <div class="slider__slide-5">
+          <img src="assets/image-5.jpg" alt="Mem-5">
+        </div>
+      </div>
+      <div class="slider__texts">
+        <div class="slider__texts-container">
+          <div class="slider__text-1">
+            <span class="text-1">Student 1, 2 or 3 on cross-check</span>
+          </div>
+          <div class="slider__text-2">
+            <span class="text-1">When did the task before the deadline</span>
+          </div>
+          <div class="slider__text-3">
+            <span class="text-1">When I saw new tests on the schedule</span>
+          </div>
+          <div class="slider__text-4">
+            <span class="text-1">When you have not slept for the second day</span>
+          </div>
+          <div class="slider__text-5">
+            <span class="text-1">When did this task and the result pleases</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
 </body>
 </html>
