@@ -63,3 +63,29 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 1.6em;
 }
+
+#slide-1:checked ~ .slider__slides,
+#slide-1:checked ~ .slider__texts .slider__texts-container {
+  transform: translateX(0%);
+  transition: all 1s;
+}
+#slide-2:checked ~ .slider__slides
+#slide-2:checked ~ .slider__texts .slider__texts-container {
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+#slide-3:checked ~ .slider__slides
+#slide-3:checked ~ .slider__texts .slider__texts-container {
+  transform: translateX(-200%);
+  transition: all 1s;
+}
+#slide-4:checked ~ .slider__slides
+#slide-4:checked ~ .slider__texts .slider__texts-container {
+  transform: translateX(-300%);
+  transition: all 1s;
+}
+#slide-5:checked ~ .slider__slides
+#slide-5:checked ~ .slider__texts .slider__texts-container {
+  transform: translateX(-400%);
+  transition: all 1s;
+}
