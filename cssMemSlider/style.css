@@ -21,6 +21,12 @@ body {
   box-shadow: 0 0 10px rgb(0, 0, 0), 0 0 6px rgb(0, 0, 0), 0 0 10px rgb(0, 0, 0);
 }
 
+@media (max-width: 640px) {
+  .wrapper {
+    padding: 1.5em 1.5em 1em;
+  }
+}
+
 /* Slider */
 .slider {
   display: grid;
@@ -33,6 +39,16 @@ body {
   max-width: 80em;
   margin: 0 auto;
   overflow: hidden;
+}
+
+@media (max-width: 800px) {
+  .slider {
+    grid-template-areas:
+    "slides"
+    "radio"
+    "text";
+    grid-template-columns: 100%;
+  }
 }
 
 .slider__slides {
@@ -62,6 +78,13 @@ body {
   flex: 1 0 100%;
   font-family: "Roboto", sans-serif;
   font-size: 1.6em;
+}
+
+@media (max-width: 640px) {
+  .slider__text-1, .slider__text-2, .slider__text-3,
+  .slider__text-4, .slider__text-5 {
+    font-size: 1.3em;
+  }
 }
 
 #slide-1:checked ~ .slider__slides,
@@ -118,6 +141,28 @@ body {
   margin-right: 0;
 }
 
+@media (max-width: 800px) {
+  .label {
+    justify-self: center;
+  }
+
+  .slider__label-1 {
+    margin-right: 11rem;
+  }
+  .slider__label-2 {
+    margin-right: 5.5rem;
+  }
+  .slider__label-3 {
+    margin-right: 0;
+  }
+  .slider__label-4 {
+    margin-right: -5.5rem;
+  }
+  .slider__label-5 {
+    margin-right: -11rem;
+  }
+}
+
 .pagination {
   display: inline-block;
   width: 1.5rem;
@@ -126,6 +171,13 @@ body {
   background-color: #fff;
   box-shadow: 0 0 10px rgb(0, 0, 0), 0 0 6px rgb(0, 0, 0), 0 0 10px rgb(0, 0, 0);
   transition: background-color 0.6s;
+}
+
+@media (max-width: 640px) {
+  .pagination {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
 }
 
 /* Hover effect */
